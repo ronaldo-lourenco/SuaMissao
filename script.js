@@ -3,7 +3,6 @@ const caixaPerguntas = document.querySelector(".caixa-perguntas") ;
 const caixaAlternativas = document.querySelector(".caixa-alternativas") ;
 const caixaResultado = document.querySelector(".caixa-resultado") ;
 const textoResultado = document.querySelector(".texto-resultado") ;
-
 const perguntas =[
     {
         enunciado : "No Brasil, em 2022, a média nacional apontou que 31,2% dos adolescentes estavam com excesso de peso. Qual o primeiro pensamento?",
@@ -27,3 +26,15 @@ const perguntas =[
         ]
     }
 ] ;
+
+let atual = 2 ;
+let perguntaAtual ;
+
+function mostraPergunta(){
+    perguntaAtual = perguntas[atual].enunciado ;
+    caixaPerguntas.textContent = perguntaAtual ;
+};
+
+mostraPergunta() ;
+
+
