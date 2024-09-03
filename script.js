@@ -59,7 +59,7 @@ function mostraPergunta(){
     caixaAlternativas.textContent = "" ;
     textoResultado.textContent    = "" ;
     mostraAlternativas() ;
-} ;
+} ; asasa asa a as
 
 function mostraAlternativas(){
     for (const alternativa of perguntas[atual].alternativas){
